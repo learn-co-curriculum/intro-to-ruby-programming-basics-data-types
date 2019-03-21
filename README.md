@@ -1,6 +1,14 @@
 # Data Types
 
-## Overview
+## Learning Goals
+
+- Identify and construct the six data types in Ruby: booleans, symbols, numbers,
+  strings, arrays, and hashes
+- Distinguish between the literal and class constructor when creating strings,
+  arrays, and hashes
+- Perform basic operations on data types
+
+## Introduction
 
 This lesson will introduce you to the six core data types in Ruby. Just like the
 English language has different types of data or ways of representing
@@ -13,14 +21,6 @@ could be a person's name, a specific number, maybe a list of numbers, etc... The
 specific ways in which we can use and manipulate these data types will become
 clearer as we build more Ruby applications, but it is useful to have a baseline
 understanding of what these data types are.
-
-## Learning Goals
-
-- Identify and construct the six data types in Ruby: booleans, symbols, numbers,
-  strings, arrays, and hashes
-- Distinguish between the literal and class constructor when creating strings,
-  arrays, and hashes
-- Perform basic operations on data types
 
 ## Strings
 
