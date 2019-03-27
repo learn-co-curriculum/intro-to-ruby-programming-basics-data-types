@@ -2,31 +2,28 @@
 
 ## Learning Goals
 
-- Identify and construct the six data types in Ruby: booleans, symbols, numbers,
-  strings, arrays, and hashes
-- Distinguish between the literal and class constructor when creating strings,
-  arrays, and hashes
-- Perform basic operations on data types
+- Identify the six data types in Ruby
 
 ## Introduction
 
-This lesson will introduce you to the six core data types in Ruby. Just like the
-English language has different types of data or ways of representing
-information––words, numbers, lists, etc––Ruby has several different data types,
-which are also known as classes. These classes are built in and always
-available.
+Just like the English language has different types of data or ways of representing
+information––words, numbers, lists––Ruby has several different data types,
+which are also known as classes. These six classes are built in and always
+available for programmers to use.
 
 In Ruby, we use data types to store information in our code. That information
-could be a person's name, a specific number, maybe a list of numbers, etc... The
+could be a person's name, a specific number, maybe a list of numbers, etc. The
 specific ways in which we can use and manipulate these data types will become
 clearer as we build more Ruby applications, but it is useful to have a baseline
 understanding of what these data types are.
 
-## Strings
+## Identify the Six Data Types in Ruby
 
-### What is a String?
+### Strings
 
-A string is a data type that represents textual data. In Ruby, a string is a
+#### What is a String?
+
+A _string_ is a data type that represents textual data. In Ruby, a string is a
 sequence of characters enclosed in double or single quotes.
 
 For example:
@@ -42,7 +39,7 @@ The above string is an instance of Ruby's String class. In other words, the
 This means that every string we make has certain behaviors or attributes, just
 by virtue of it being a string.
 
-### Creating Strings
+#### Creating Strings
 
 There are two ways to create a string. In fact, we've already created a string
 just by typing `"hello"`.
@@ -63,7 +60,7 @@ will create an empty string.
 the most part, you will create strings using the first method discussed
 here––simply by enclosing whatever text you want in double or single quotes.
 
-### Operating on Strings
+#### Operating on Strings
 
 Because every string is an instance of, or is based on, Ruby's String class,
 there are certain behaviors, or methods, available to us for operating on them.
@@ -80,25 +77,25 @@ examples.
    => "olleh"
 ```
 
-## Booleans
+### Booleans
 
 There are only two values of the Boolean data type: `true` and `false`. In Ruby,
 however, there is no such thing as a Boolean class. Instead, every appearance,
 or instance, of `true` and `false` in your program are instances of TrueClass
 and FalseClass respectively.
 
-### Creating Booleans
+#### Creating Booleans
 
 Unlike strings, there is not a way to create a Boolean value, other than to
 explicitly write `true` or `false`. Later, we will see that we can write lines
 of code that _evaluate to_ or return `true` and `false`, but we won't worry
 about that for now.
 
-### Operating on Booleans
+#### Operating on Booleans
 
 We don't! They just... are.
 
-## Numbers
+### Numbers
 
 In Ruby, there are two types of numbers, Integers and Floats.
 
@@ -109,13 +106,13 @@ In Ruby, there are two types of numbers, Integers and Floats.
 > In earlier versions of Ruby, Integers were split into two classes, Fixnum and
 > Bignum, but these data types are deprecated as of Ruby 2.4
 
-### Creating Numbers
+#### Creating Numbers
 
 Once again, there is no special magic to creating numbers. Simply declare them
 by typing then out like `9000123` or `2.42331`. Ruby will treat the number as
 an Integer or Float accordingly.
 
-### Operating on Integers and Floats
+#### Operating on Integers and Floats
 
 There are a number of methods available to you for operating on or manipulating
 integers. You can read more about [Integers][integer] and [Floats][float], but for
@@ -134,7 +131,7 @@ now, we'll just check out a few examples:
   => 11
 ```
 
-## Symbols
+### Symbols
 
 A symbol is a representation of a piece of data. Symbols look like this
 `:my_symbol`. If I make a symbol, `:my_symbol`, and then use that symbol later
@@ -142,7 +139,7 @@ on in my code, my program will refer to the same area of memory in both cases.
 This is different from, for example, strings, which take up new areas of memory
 every time they are used.
 
-### Creating Symbols
+#### Creating Symbols
 
 You write symbols by placing a `:` in front of the symbol name.
 
@@ -151,17 +148,17 @@ You write symbols by placing a `:` in front of the symbol name.
 The usefulness of symbols will become more apparent later on, so that's all on
 symbols for now.
 
-## Arrays
+### Arrays
 
 Arrays are collections of Ruby objects. You can store any type of data in an
 array.
 
-### Creating Arrays
+#### Creating Arrays
 
 There are a number of ways to create an array. Just like with creating strings,
 you can use the literal constructor or the class constructor.
 
-#### The Array Literal Constructor
+##### The Array Literal Constructor
 
 ```ruby
 [1, 3, 400, 7]
@@ -171,7 +168,7 @@ The above code snippet is an array of integers (Fixnums). Any set of comma
 separated data enclosed in brackets is an array. So, by simply writing
 something like the above, you can create an array.
 
-#### The Array Class Constructor
+##### The Array Class Constructor
 
 ```ruby
 Array.new
@@ -187,7 +184,7 @@ Array.new(4, false)
 # => [false, false, false, false]
 ```
 
-### Operating on Arrays
+#### Operating on Arrays
 
 There are many ways to operate on arrays and on each individual item, or
 element, within an array. Later on in the course, we'll learn about
@@ -204,7 +201,7 @@ now, we'll preview a few array methods, and you can check out more
   => [3, 2, 1]
 ```
 
-## Hashes
+### Hashes
 
 Hashes also store objects in Ruby. However, they differ from arrays in that they
 function like dictionaries, rather than a list. Instead of a simple comma
@@ -223,7 +220,7 @@ hash contains two key/value pairs, separated by a comma.
 Keys and values can be _any_ data type, but keys are commonly set as strings or
 symbols.
 
-### Creating Hashes
+#### Creating Hashes
 
 Just like arrays, hashes can be created with literal constructors and class
 constructors.
@@ -246,7 +243,7 @@ Hash.new
 # => {}
 ```
 
-### Operating on Hashes
+#### Operating on Hashes
 
 There are many methods for operating on hashes and their individual key/value
 pairs. We will learn much more about them later, but you can preview some
